@@ -57,3 +57,13 @@ Esta etapa só precisa ser feita uma vez por dispositivo:
 
 > **Nota:** Se você desconectar e reconectar à rede Wi-Fi, pode ser necessário rodar o comando `flutter run` ou um comando `adb connect` para restabelecer a comunicação sem o cabo.
 
+## Compilando e Executando o Projeto
+Após o setup do projeto e a configuração de um dispositivo (USB ou Wi-Fi), você pode executar o aplicativo:
+
+### 1. Verificar Dispositivos Conectados
+Abra o terminal na pasta raiz do projeto e execute:
+
+Executar em Modo Debug:
+```bash
+flutter run
+```
