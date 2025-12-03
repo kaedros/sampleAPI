@@ -39,15 +39,9 @@ Esta etapa só precisa ser feita uma vez por dispositivo:
 * O dispositivo deve solicitar a **"Permissão para depuração USB"**. **Aceite** e, se disponível, marque a opção **"Sempre permitir a partir deste computador"**.
 
 ### 3.2. Conectar e Autorizar (Wi-Fi)
-
-3.2.1. **Conexão Inicial (Primeira Vez):**
-    * **Conecte o dispositivo ao seu computador usando o cabo USB** pela primeira vez para estabelecer a comunicação inicial.
-3.2.2. **Habilitar Depuração Wireless:**
-    * No seu celular, vá em **Configurações > Sistema > Opções do Desenvolvedor**.
-    * Localize e **habilite a opção "Depuração por Wi-Fi"** (ou Wireless Debugging).
-3.2.3. **Pareamento (Emparelhamento):**
+#### **Pareamento:**
     * Dentro da opção "Depuração por Wi-Fi", toque em **"Parear dispositivo com código de pareamento"**. Uma tela aparecerá com um código e um endereço IP/Porta.
-3.2.4. **Executar o Comando ADB no Computador:**
+#### **Executar o Comando ADB no Computador:**
     * Abra o terminal no seu computador (na pasta do projeto ou em qualquer lugar com o ADB disponível).
     * Execute o comando de conexão/pareamento, substituindo o IP e o código pelos valores exibidos no seu celular:
 
@@ -58,8 +52,8 @@ Esta etapa só precisa ser feita uma vez por dispositivo:
     ```
 
     * Quando solicitado, **insira o código de pareamento** que está sendo exibido no seu celular.
-3.2.5. **Conectar e Usar:**
-    * Após o pareamento, você não precisa mais do cabo. O dispositivo aparecerá na lista de dispositivos conectados e você poderá rodar o `flutter run` normalmente.
+#### **Conectar e Usar:**
+    * O dispositivo aparecerá na lista de dispositivos conectados e você poderá rodar o `flutter run` normalmente.
 
 > **Nota:** Se você desconectar e reconectar à rede Wi-Fi, pode ser necessário rodar o comando `flutter run` ou um comando `adb connect` para restabelecer a comunicação sem o cabo.
 
